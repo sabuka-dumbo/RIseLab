@@ -230,6 +230,12 @@ header {
     grid-column: 3;
 }
 
+.hover-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
 @media screen and (max-width: 1000px) {
     .header-img {
         top: 50px;

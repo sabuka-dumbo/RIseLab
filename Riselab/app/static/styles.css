@@ -217,11 +217,12 @@ header {
     margin-top: 20px;
     border: none;
     color: white;
-    animation: ease 0.3s header-button;
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* smooth hover effect */
 }
 
 .header-button:hover {
     box-shadow: 10px 10px darkblue;
+    transform: translate(-2px, -2px); /* optional: slight movement for effect */
 }
 
 .header-img {

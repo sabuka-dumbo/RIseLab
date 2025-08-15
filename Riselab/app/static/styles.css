@@ -410,6 +410,23 @@ header {
         margin-top: 20px;
     }
 
+    .s1-div {
+        grid-template-columns: 100%;
+    }
+
+    .s1-img {
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    .s1-div2 {
+        margin-top: 20px;
+    }
+
+    .s1-title2 {
+        margin-top: 100px;
+    }
+
     .header-img,
     .hover-container {
         grid-column: 1;

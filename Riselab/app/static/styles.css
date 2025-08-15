@@ -154,9 +154,9 @@ header {
     width: 80%;
     margin-left: 10%;
     height: max-content;
-    background-color: #333;
     grid-template-columns: 50% 50%;
     display: grid;
+    margin-top: 100px;
 }
 
 .header-div1 {
@@ -181,6 +181,7 @@ header {
     font-family: "Itim";
     font-weight: bold;
     color: black;
+    margin-top: 50px;
 }
 
 .header-descripion {
@@ -209,20 +210,21 @@ header {
     background-color: #0ea5e9;
     padding: 0;
     margin: 0;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     margin-top: 20px;
+    border: none;
+    color: white;
 }
 
 .header-img {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    position: relative;
+    top: 0;
     left: 0;
     width: 100%;
-    height: 80%;
+    height: 300px;
     display: inline-block;
     object-fit: cover;
     grid-column: 2;

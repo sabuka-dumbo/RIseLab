@@ -217,6 +217,11 @@ header {
     margin-top: 20px;
     border: none;
     color: white;
+    animation: ease 0.3s header-button;
+}
+
+.header-button:hover {
+    box-shadow: 10px 10px darkblue;
 }
 
 .header-img {
@@ -298,5 +303,13 @@ header {
     .header-img,
     .hover-container {
         height: 200px;
+    }
+}
+
+@keyframes header-button {
+    0% {}
+
+    100% {
+        box-shadow: 10px 10px darkblue;
     }
 }

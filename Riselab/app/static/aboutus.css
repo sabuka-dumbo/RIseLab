@@ -303,6 +303,11 @@ header {
     grid-row: 1;
 }
 
+.impact-section {
+  margin-left: 10%;
+  width: 80%;
+}
+
 .s2-info h1 {
     position: relative;
     top: 0;

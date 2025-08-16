@@ -148,7 +148,7 @@ header {
     padding: 0;
     margin: 0;
     margin-left: 10%;
-    margin-top: 30px;
+    margin-top: 100px;
 }
 
 .youtube-video {
@@ -539,4 +539,82 @@ button {
 
 .info p {
     margin: 3px 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+.socials {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.socials h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  font-size: 24px;
+  text-decoration: none;
+  color: white;
+  transition: background 0.3s ease;
+}
+
+.instagram {
+  background: #e1306c;
+}
+
+.facebook {
+  background: #3b5998;
+}
+
+.tiktok {
+  background: #000;
+}
+
+.linkedin {
+  background: #0077b5;
+}
+
+.social:hover {
+  opacity: 0.8;
+}
+
+
+.footer {
+  background: #0ea5e9;
+  color: white;
+  padding: 20px;
+}
+
+.footer-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer-contact div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
 }

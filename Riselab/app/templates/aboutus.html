@@ -65,6 +65,78 @@
             </div>
         </section>
 
+        <section class="impact-section">
+    <h1 class="fade-in">Our Impact</h1>
+
+    <div class="impact-stats">
+      <div class="stat fade-in">
+        <span class="counter" data-target="3">0</span>+
+        <p>projects we made</p>
+      </div>
+      <div class="stat fade-in">
+        <span class="counter" data-target="90">0</span>+
+        <p>young people that benefited</p>
+      </div>
+      <div class="stat fade-in">
+        <span class="counter" data-target="150">0</span>+
+        <p>hours spent by our team to make change</p>
+      </div>
+    </div>
+
+    <h2 class="fade-in">What people say</h2>
+
+    <div class="testimonial-carousel fade-in">
+      <button id="prevBtn">←</button>
+      <div id="testimonialText" class="testimonial">"Amazing work!"</div>
+      <button id="nextBtn">→</button>
+    </div>
+  </section>
+
+        <script>
+            // Animated counter
+            const counters = document.querySelectorAll(".counter");
+
+            counters.forEach(counter => {
+            const updateCount = () => {
+                const target = +counter.getAttribute("data-target");
+                const count = +counter.innerText;
+                const increment = target / 100;
+
+                if (count < target) {
+                counter.innerText = Math.ceil(count + increment);
+                setTimeout(updateCount, 20);
+                } else {
+                counter.innerText = target;
+                }
+            };
+
+            updateCount();
+            });
+
+            // Testimonials
+            const testimonials = [
+            '"Amazing work!"',
+            '"Great impact on youth!"',
+            '"Truly inspiring team."'
+            ];
+
+            let currentIndex = 0;
+            const testimonialText = document.getElementById("testimonialText");
+            const prevBtn = document.getElementById("prevBtn");
+            const nextBtn = document.getElementById("nextBtn");
+
+            prevBtn.addEventListener("click", () => {
+            currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
+            testimonialText.textContent = testimonials[currentIndex];
+            });
+
+            nextBtn.addEventListener("click", () => {
+            currentIndex = (currentIndex + 1) % testimonials.length;
+            testimonialText.textContent = testimonials[currentIndex];
+            });
+
+        </script>
+
         <script src="{% static 'index.js' %}"></script>
     </body>
 </html>

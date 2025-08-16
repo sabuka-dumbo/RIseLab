@@ -248,6 +248,29 @@ header {
     .youtube-video {
         height: 300px;
     }
+
+    .s1-div {
+        grid-template-columns: 100%;
+    }
+    
+    .s1-img {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .s1-info {
+        grid-column: 1;
+        grid-row: 2;
+        margin-top: 25px;
+    }
+
+    .s1-info h1{
+        font-size: 25px;
+    }
+
+    .s1-info p {
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 480px) {

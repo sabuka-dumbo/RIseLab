@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ka">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RiseLab</title>
+        <link rel="stylesheet" href="{% static 'styles.css' %}">
+        <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" href="{% static 'pics/Untitled3.png' %}">
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="nav-left">
+                <img src="{% static 'pics/Untitled3.png' %}" alt="RiseLab Logo">
+                <h1>RiseLab</h1>
+            </div>
+            <div class="nav-links">
+                <a href="#">მთავარი</a>
+                <a href="#">ჩვენ შესახებ</a>
+                <a href="#">პროექტები</a>
+                <a href="#">კონტაქტი</a>
+            </div>
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+        <script src="{% static 'index.js' %}"></script>
+    </body>
+</html>

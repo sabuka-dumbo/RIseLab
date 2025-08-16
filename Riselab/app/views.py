@@ -9,3 +9,6 @@ def aboutus(request):
 
 def blogs(request):
     return render(request, "blogs.html")
+
+def blog(request, Id):
+    return render(request, "blog.html")

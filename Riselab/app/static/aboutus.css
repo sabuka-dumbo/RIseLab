@@ -131,3 +131,18 @@ body {
     transform: rotate(-45deg) translate(6px, -7px);
 }
 
+
+
+
+
+
+
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: max-content;
+    padding: 0;
+    margin: 0;
+}

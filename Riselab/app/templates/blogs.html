@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>RiseLab</title>
+        <title>RiseLab Blog</title>
         <link rel="stylesheet" href="{% static 'blogs.css' %}">
         <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
         <link rel="icon" type="image/png" href="{% static 'pics/Untitled3.png' %}">
@@ -28,7 +28,54 @@
             </div>
         </nav>
 
-        <header></header>
+        <header class="hero-post">
+            <img src="{% static 'pics/hero.jpg' %}" alt="Hero Image">
+            <div class="hero-text">
+                <h2>ჩვენი უახლესი პროექტი</h2>
+                <p>გაიგეთ როგორ ვქმნით მომავლის შესაძლებლობებს RiseLab-ში.</p>
+                <a href="#" class="btn">გაიგე მეტი</a>
+            </div>
+        </header>
+
+        <section class="blog-grid">
+            <div class="main-posts">
+                <div class="post">
+                    <img src="{% static 'pics/post1.jpg' %}" alt="">
+                    <h3>სტატიის სათაური 1</h3>
+                    <p>მოკლე აღწერა...</p>
+                    <a href="#" class="btn">წაიკითხე</a>
+                </div>
+                <div class="post">
+                    <img src="{% static 'pics/post2.jpg' %}" alt="">
+                    <h3>სტატიის სათაური 2</h3>
+                    <p>მოკლე აღწერა...</p>
+                    <a href="#" class="btn">წაიკითხე</a>
+                </div>
+                <div class="post">
+                    <img src="{% static 'pics/post3.jpg' %}" alt="">
+                    <h3>სტატიის სათაური 3</h3>
+                    <p>მოკლე აღწერა...</p>
+                    <a href="#" class="btn">წაიკითხე</a>
+                </div>
+            </div>
+            <aside class="sidebar">
+                <h3>ბოლო სტატიები</h3>
+                <div class="sidebar-post">
+                    <img src="{% static 'pics/post4.jpg' %}" alt="">
+                    <div>
+                        <h4>სტატიის სათაური 4</h4>
+                        <a href="#">წაიკითხე</a>
+                    </div>
+                </div>
+                <div class="sidebar-post">
+                    <img src="{% static 'pics/post5.jpg' %}" alt="">
+                    <div>
+                        <h4>სტატიის სათაური 5</h4>
+                        <a href="#">წაიკითხე</a>
+                    </div>
+                </div>
+            </aside>
+        </section>
 
         <script src="{% static 'blogs.js' %}"></script>
     </body>

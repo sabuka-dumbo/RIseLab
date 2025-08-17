@@ -32,7 +32,7 @@
             <div class="header-div1">
                 <h1 class="header-title">ვაძლიერებთ ახალ თაობას</h1>
                 <h1 class="header-descripion">ჩვენი მიზანია, გავაერთიანოთ მოტივირებული ახალგაზრდები, შევუქმნათ მათ შესაძლებლობები და ერთად შევცვალოთ მომავალი.</h1>
-                <button class="header-button">მოითხოვე მონაწილეობა</button>
+                <a href="{% url 'contact' %}"><button class="header-button">მოითხოვე მონაწილეობა</button></a>
             </div>
 
             <div class="hover-container">
@@ -52,8 +52,8 @@
                     <h1 class="s1-title2">ჩვენ შესახებ</h1>
                     <h1 class="s1-description">ჩვენი ორგანიზაცია მოხალისეობრივად მუშაობს საქართველოს ახალგაზრდების განვითარებისა და გაძლიერების მიზნით. ვქმნით სივრცეს, სადაც ახალგაზრდებს შეუძლიათ თავიანთი შესაძლებლობების რეალიზება, მიიღონ მხარდაჭერა და დაეხმარონ საზოგადოებას პოზიტიური ცვლილებების შექმნაში.</h1>
                     <div class="s1-buttons">
-                        <button class="s1-button">გაიგე მეტი</button>
-                        <button class="s1-button">შემოგვიერთდი</button>
+                        <a href="{% url 'aboutus' %}"><button class="s1-button">გაიგე მეტი</button></a>
+                        <a href="{% url 'contact' %}"><button class="s1-button">შემოგვიერთდი</button></a>
                     </div>
                 </div>
 
@@ -130,7 +130,7 @@
                 <div class="donation-text">
                     <p>თქვენი მხარდაჭერა ეხმარება ახალგაზრდებს მთელ საქართველოში, მიიღონ ცოდნა, შესაძლებლობები და იმედი უკეთესი მომავლისთვის.</p>
                     <p>თითოეული წვლილი მნიშვნელოვანია.</p>
-                    <button class="btn">შეიტანეთ წვლილი</button>
+                    <a href="{% url 'donation' %}"><button class="btn">შეიტანეთ წვლილი</button></a>
                 </div>
             </div>
         </section>

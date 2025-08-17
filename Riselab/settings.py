@@ -56,6 +56,20 @@ TEMPLATES = [
 WSGI_APPLICATION = 'Riselab.wsgi.application'
 
 # Database (Heroku-ready)
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "neondb",
+        "USER": "neondb_owner",
+        "PASSWORD": "npg_6jLkcan9qJIO",
+        "HOST": "ep-round-dream-a9izs0s8-pooler.gwc.azure.neon.tech",
+        "PORT": "5432",
+        "OPTIONS": {
+            "sslmode": "require",
+            "channel_binding": "require",
+        },
+    }
+}
 
 
 # Password validation

@@ -1,0 +1,106 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>პროექტის შესახებ - RiseLab</title>
+    <link rel="stylesheet" href="{% static 'projectinfo.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="{% static 'pics/Untitled3.png' %}">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <img src="{% static 'pics/Untitled3.png' %}" alt="RiseLab Logo">
+            <h1>RiseLab</h1>
+        </div>
+        <div class="nav-links">
+            <a href="{% url 'index' %}">მთავარი</a>
+            <a href="{% url 'aboutus' %}">ჩვენ შესახებ</a>
+            <a href="{% url 'blogs' %}">ბლოგი</a>
+            <a href="{% url 'contact' %}">კონტაქტი</a>
+        </div>
+        <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-text">
+            <h2>პროექტის შესახებ</h2>
+            <p>გაიგეთ ჩვენი იდეისა და მიზნების შესახებ, და როგორ ვქმნით ინოვაციურ გადაწყვეტილებებს.</p>
+        </div>
+        <div class="hero-image">
+            <img src="{% static 'pics/project_hero.jpg' %}" alt="Project Hero Image">
+        </div>
+    </section>
+
+    <!-- Project Description -->
+    <section class="project-description">
+        <div class="description-text">
+            <h3>რა არის პროექტი?</h3>
+            <p>
+                ჩვენი პროექტი მიზნად ისახავს ახალგაზრდა მომავალი ლიდერების მხარდაჭერას, 
+                მათთან ერთად შესაძლებლობების შექმნას და ინოვაციური იდეების განვითარებას.
+            </p>
+            <p>
+                ჩვენ ვთავაზობთ რესურსებს, ცოდნას და გამოცდილებას, რათა იდეები რეალობად იქცეს.
+            </p>
+        </div>
+        <div class="description-image">
+            <img src="{% static 'pics/project_image1.jpg' %}" alt="Project Image">
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <h3>პროექტის ფუნქციები</h3>
+        <div class="features-grid">
+            <div class="feature">
+                <img src="{% static 'pics/feature1.png' %}" alt="Feature Icon">
+                <h4>ინოვაციური იდეები</h4>
+                <p>ახალი კონცეფციების მხარდაჭერა და განვითარება.</p>
+            </div>
+            <div class="feature">
+                <img src="{% static 'pics/feature2.png' %}" alt="Feature Icon">
+                <h4>მოგზაურობა ცოდნაში</h4>
+                <p>სწავლების პროცესის გაუმჯობესება და გამოცდილების გაზიარება.</p>
+            </div>
+            <div class="feature">
+                <img src="{% static 'pics/feature3.png' %}" alt="Feature Icon">
+                <h4>კონტაქტი ექსპერტებთან</h4>
+                <p>მონაწილეებსთან დაკავშირებით გამოცდილება და mentorship.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <h3>გუნდი</h3>
+        <div class="team-grid">
+            <div class="team-member">
+                <img src="{% static 'pics/member1.jpg' %}" alt="Team Member">
+                <h4>სახელი გვარი</h4>
+                <p>პროექტის ხელმძღვანელი</p>
+            </div>
+            <div class="team-member">
+                <img src="{% static 'pics/member2.jpg' %}" alt="Team Member">
+                <h4>სახელი გვარი</h4>
+                <p>კონსულტანტი</p>
+            </div>
+            <div class="team-member">
+                <img src="{% static 'pics/member3.jpg' %}" alt="Team Member">
+                <h4>სახელი გვარი</h4>
+                <p>კოორდინატორი</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="{% static 'blog.js' %}"></script>
+</body>
+</html>

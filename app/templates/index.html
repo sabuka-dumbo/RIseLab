@@ -16,10 +16,10 @@
                 <h1>RiseLab</h1>
             </div>
             <div class="nav-links">
-                <a href="#">მთავარი</a>
-                <a href="#">ჩვენ შესახებ</a>
-                <a href="#">პროექტები</a>
-                <a href="#">კონტაქტი</a>
+                <a href="{% url 'index' %}">მთავარი</a>
+                <a href="{% url 'aboutus' %}">ჩვენ შესახებ</a>
+                <a href="{% url 'blogs' %}">ბლოგი</a>
+                <a href="{% url 'contact' %}">კონტაქტი</a>
             </div>
             <div class="burger">
                 <span></span>
@@ -93,14 +93,14 @@
                 <div class="project-text">
                     <h3>პროექტის სახელი</h3>
                     <p>პროექტის მოკლე აღწერა, რომელიც ასახავს მის მიზანსა და გავლენას.</p>
-                    <button class="btn">გაიგე მეტი</button>
+                    <a href="{% url 'projectinfo' Id=1 %}"><button class="btn">გაიგე მეტი</button></a>
                 </div>
                 <div class="project-image">
                     <img src="{% static 'pics/Untitled2.jpg' %}" alt="Project Image">
                 </div>
             </div>
             <div class="center-btn">
-                <button class="btn-outline">იხილე მეტი</button>
+                <a href="{% url 'projects' %}"><button class="btn-outline">იხილე მეტი</button></a>
             </div>
 
             <h2 class="section-title">მომავალი პროექტები</h2>
@@ -117,7 +117,7 @@
                 </div>
             </div>
             <div class="center-btn">
-                <button class="btn-outline">მეტი ჩვენი პროექტებიდან</button>
+                <a href="{% url 'projects' %}"><button class="btn-outline">მეტი ჩვენი პროექტებიდან</button></a>
             </div>
         </section>
 

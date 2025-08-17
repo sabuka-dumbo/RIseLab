@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>კონტაქტი - RiseLab</title>
+    <link rel="stylesheet" href="{% static 'contact.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="{% static 'pics/Untitled3.png' %}">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <img src="{% static 'pics/Untitled3.png' %}" alt="RiseLab Logo">
+            <h1>RiseLab</h1>
+        </div>
+        <div class="nav-links">
+            <a href="{% url 'index' %}">მთავარი</a>
+            <a href="{% url 'aboutus' %}">ჩვენ შესახებ</a>
+            <a href="{% url 'blogs' %}">ბლოგი</a>
+            <a href="{% url 'contact' %}">კონტაქტი</a>
+        </div>
+        <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="contact-hero">
+        <h2>გაიგეთ ჩვენ შესახებ ან დაგვიკავშირდით</h2>
+        <p>ჩვენ მუდამ მზად ვართ თქვენი კითხვებისა და წინადადებების მოსასმენად.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <main class="contact-container">
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <h3>დაგვიკავშირდით</h3>
+            <form method="POST" action="">
+                {% csrf_token %}
+                <input type="text" name="name" placeholder="სახელი" required>
+                <input type="email" name="email" placeholder="ელ-ფოსტა" required>
+                <input type="text" name="subject" placeholder="თემა" required>
+                <textarea name="message" placeholder="შეტყობინება" rows="6" required></textarea>
+                <button type="submit" class="btn">გაგზავნა</button>
+            </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+            <h3>ჩვენი ინფორმაცია</h3>
+            <p><strong>საბჭო ტელეფონი:</strong> +995 555 123 456</p>
+            <p><strong>ელ-ფოსტა:</strong> info@riselab.ge</p>
+            <p><strong>მისამართი:</strong> თბილისი, საქართველო</p>
+            <div class="map">
+                <!-- You can replace with embedded Google Map -->
+                <iframe src="https://maps.google.com/maps?q=Tbilisi&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </main>
+
+    <script src="{% static 'blog.js' %}"></script>
+</body>
+</html>

@@ -16,3 +16,15 @@ def blogs(request):
 
 def blog(request, Id):
     return render(request, "blog.html")
+
+def contact(request):
+    return render(request, "contact.html")
+
+def projectinfo(request, Id):
+    return render(request, "projectinfo.html")
+
+def projects(request):
+    return render(request, "projects.html")
+
+def donation(request):
+    return render(request, "donation.html")

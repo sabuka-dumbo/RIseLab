@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>დონაცია - RiseLab</title>
+    <link rel="stylesheet" href="{% static 'donation.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+</head>
+<body>
+        <nav class="navbar">
+            <div class="nav-left">
+                <img src="{% static 'pics/Untitled3.png' %}" alt="RiseLab Logo">
+                <h1>RiseLab</h1>
+            </div>
+            <div class="nav-links">
+                <a href="{% url 'index' %}">მთავარი</a>
+                <a href="{% url 'aboutus' %}">ჩვენ შესახებ</a>
+                <a href="{% url 'blogs' %}">ბლოგი</a>
+                <a href="{% url 'contact' %}">კონტაქტი</a>
+            </div>
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+    <!-- Hero Section -->
+    <section class="donate-hero">
+        <h2>დაგვეხმარეთ ჩვენი პროექტების განვითარებაში</h2>
+        <p>თქვენი მხარდაჭერა საშუალებას მოგვცემს შევქმნათ მეტი ინოვაციური პროექტი.</p>
+    </section>
+
+    <!-- Donation Form -->
+    <section class="donation-section">
+        <form action="" method="POST" class="donation-form">
+            {% csrf_token %}
+            <h3>აირჩიეთ ან შეიყვანეთ თანხა</h3>
+
+            <div class="donation-amounts">
+                <button type="button" data-value="10">10₾</button>
+                <button type="button" data-value="25">25₾</button>
+                <button type="button" data-value="50">50₾</button>
+                <button type="button" data-value="100">100₾</button>
+            </div>
+
+            <label for="custom_amount">საკუთარი თანხა (₾)</label>
+            <input type="number" id="custom_amount" name="amount" min="1" placeholder="შეიყვანეთ თანხა">
+
+            <button type="submit" class="btn-donate">დონაცია</button>
+        </form>
+    </section>
+
+    <script src="{% static 'donate.js' %}"></script>
+</body>
+</html>

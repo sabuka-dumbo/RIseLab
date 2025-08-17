@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>პროექტები - RiseLab</title>
+    <link rel="stylesheet" href="{% static 'projects.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="{% static 'pics/Untitled3.png' %}">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <img src="{% static 'pics/Untitled3.png' %}" alt="RiseLab Logo">
+            <h1>RiseLab</h1>
+        </div>
+        <div class="nav-links">
+            <a href="{% url 'index' %}">მთავარი</a>
+            <a href="{% url 'aboutus' %}">ჩვენ შესახებ</a>
+            <a href="{% url 'blogs' %}">ბლოგი</a>
+            <a href="{% url 'projects' %}">პროექტები</a>
+            <a href="{% url 'contact' %}">კონტაქტი</a>
+        </div>
+        <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="projects-hero">
+        <h2>ჩვენი პროექტები</h2>
+        <p>გაიგეთ მეტი ჩვენი პროექტების შესახებ და როგორ ვქმნით ინოვაციურ გადაწყვეტილებებს.</p>
+    </section>
+
+    <!-- Projects Grid -->
+    <main class="projects-container">
+        {% for project in projects %}
+        <div class="project-card">
+            <img src="{{ project.image.url }}" alt="{{ project.title }}">
+            <div class="project-content">
+                <h3>{{ project.title }}</h3>
+                <p>{{ project.short_description }}</p>
+                <a href="{% url 'project_detail' project.id %}" class="btn">View More</a>
+            </div>
+        </div>
+        {% endfor %}
+    </main>
+
+    <script src="{% static 'blog.js' %}"></script>
+</body>
+</html>

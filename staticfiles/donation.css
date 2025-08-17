@@ -1,0 +1,227 @@
+/* Global */
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: #f8fafc;
+    margin: 0;
+    padding: 0;
+    padding-top: 70px;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 2rem;
+    z-index: 1000;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav-left img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.nav-left img:hover {
+    transform: rotate(8deg) scale(1.05);
+}
+
+.nav-left h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #111;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    position: relative;
+    padding: 4px 0;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background: #0ea5e9;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #0ea5e9;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.burger span {
+    width: 26px;
+    height: 3px;
+    background: #333;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.burger.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px,6px);
+}
+
+.burger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px,-7px);
+}
+
+@media (max-width: 800px) {
+    .burger { display: flex; }
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: white;
+        flex-direction: column;
+        width: 220px;
+        padding: 1rem 1.5rem;
+        gap: 1rem;
+        box-shadow: -2px 0 12px rgba(0,0,0,0.1);
+        transform: translateX(100%);
+        opacity: 0;
+        pointer-events: none;
+    }
+    .nav-links.active {
+        transform: translateX(0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+}
+
+/* Hero Section */
+.donate-hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: #0ea5e9;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.donate-hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    max-width: 90%;
+}
+
+.donate-hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+}
+
+/* Donation Form */
+.donation-section {
+    display: flex;
+    justify-content: center;
+    padding: 4rem 2rem;
+}
+
+.donation-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.donation-form h3 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.donation-amounts {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.donation-amounts button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #0ea5e9;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.donation-amounts button:hover {
+    background: #0284c7;
+}
+
+.donation-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.btn-donate {
+    width: 100%;
+    padding: 12px;
+    background: #0ea5e9;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-donate:hover {
+    background: #0284c7;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .donate-hero h2 { font-size: 2rem; }
+    .donate-hero p { font-size: 1rem; }
+    .donation-form { padding: 1.5rem; }
+    .donation-amounts { gap: 6px; }
+}

@@ -1,0 +1,80 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: "Segoe UI", sans-serif; background: #f8fafc; padding-top: 70px; }
+
+/* Navbar (same as previous pages) */
+.navbar {
+    position: fixed; top: 0; width: 100%; background: white;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 0.8rem 2rem; z-index: 1000; box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}
+.nav-left { display: flex; align-items: center; gap: 12px; }
+.nav-left img { width: 42px; height: 42px; border-radius: 50%; transition: transform 0.3s ease; }
+.nav-left img:hover { transform: rotate(8deg) scale(1.05); }
+.nav-left h1 { font-size: 1.5rem; font-weight: 700; color: #111; }
+.nav-links { display: flex; gap: 2rem; }
+.nav-links a { text-decoration: none; color: #333; font-weight: 500; position: relative; padding: 4px 0; }
+.nav-links a::after {
+    content: ""; position: absolute; left: 0; bottom: 0; width: 0%; height: 2px; background: #0ea5e9;
+    transition: width 0.3s ease;
+}
+.nav-links a:hover { color: #0ea5e9; }
+.nav-links a:hover::after { width: 100%; }
+.burger { display: none; flex-direction: column; gap: 6px; cursor: pointer; }
+.burger span { width: 26px; height: 3px; background: #333; border-radius: 2px; transition: all 0.3s ease; }
+.burger.open span:nth-child(1) { transform: rotate(45deg) translate(5px,6px); }
+.burger.open span:nth-child(2) { opacity: 0; }
+.burger.open span:nth-child(3) { transform: rotate(-45deg) translate(6px,-7px); }
+@media (max-width: 800px) {
+    .burger { display: flex; }
+    .nav-links {
+        position: absolute; top: 70px; right: 0; background: white;
+        flex-direction: column; width: 220px; padding: 1rem 1.5rem; gap: 1rem;
+        box-shadow: -2px 0 12px rgba(0,0,0,0.1); transform: translateX(100%); opacity: 0; pointer-events: none;
+    }
+    .nav-links.active { transform: translateX(0); opacity: 1; pointer-events: auto; }
+}
+
+/* Hero Section */
+.hero-section { display: flex; align-items: center; justify-content: space-between; padding: 4rem 2rem; gap: 2rem; background: #0ea5e9; color: white; flex-wrap: wrap; }
+.hero-section .hero-text { flex: 1; min-width: 300px; }
+.hero-section .hero-text h2 { font-size: 2.5rem; margin-bottom: 1rem; }
+.hero-section .hero-text p { font-size: 1.2rem; }
+.hero-section .hero-image { flex: 1; min-width: 300px; }
+.hero-section .hero-image img { width: 100%; border-radius: 12px; }
+
+/* Project Description */
+.project-description { display: flex; gap: 2rem; padding: 4rem 2rem; max-width: 1200px; margin: auto; flex-wrap: wrap; }
+.description-text, .description-image { flex: 1; min-width: 300px; }
+.description-text h3 { font-size: 2rem; margin-bottom: 1rem; color: #111; }
+.description-text p { font-size: 1.1rem; line-height: 1.8; margin-bottom: 1rem; }
+.description-image img { width: 100%; border-radius: 12px; }
+
+/* Features Section */
+.features-section { background: #f0f9ff; padding: 4rem 2rem; }
+.features-section h3 { text-align: center; font-size: 2rem; margin-bottom: 3rem; }
+.features-grid { display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; }
+.feature { background: white; padding: 2rem; border-radius: 12px; text-align: center; width: 250px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); }
+.feature img { width: 60px; margin-bottom: 1rem; }
+.feature h4 { font-size: 1.2rem; margin-bottom: 0.5rem; }
+.feature p { font-size: 1rem; color: #555; }
+
+/* Team Section */
+.team-section { padding: 4rem 2rem; max-width: 1200px; margin: auto; }
+.team-section h3 { text-align: center; font-size: 2rem; margin-bottom: 3rem; }
+.team-grid { display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; }
+.team-member { text-align: center; background: white; padding: 1.5rem; border-radius: 12px; width: 200px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); }
+.team-member img { width: 100%; border-radius: 12px; margin-bottom: 1rem; }
+.team-member h4 { font-size: 1.2rem; margin-bottom: 0.3rem; }
+.team-member p { font-size: 1rem; color: #555; }
+
+/* Responsive */
+@media (max-width: 1100px) { 
+    .hero-section, .project-description { flex-direction: column; }
+    .features-grid, .team-grid { justify-content: center; }
+}
+@media (max-width: 600px) { 
+    .hero-section .hero-text h2 { font-size: 2rem; }
+    .project-description .description-text h3 { font-size: 1.8rem; }
+    .features-section h3, .team-section h3 { font-size: 1.8rem; }
+}

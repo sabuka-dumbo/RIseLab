@@ -40,7 +40,7 @@
     <main class="projects-container">
         {% for project in projects %}
         <div class="project-card">
-            <img src="" alt="">
+            <img src="{{ project.image.url }}" alt="">
             <div class="project-content">
                 <h3>{{ project.title }}</h3>
                 <p>{{ project.short_description_geo }}</p>

@@ -3,7 +3,10 @@ from .models import *
 
 # Create your views here.
 def index(request):
-    return render(request, "index.html")
+    projects = Project.objects.all()
+    return render(request, "index.html", {
+        "projects": projects,
+    })
 
 def aboutus(request):
     return render(request, "aboutus.html")

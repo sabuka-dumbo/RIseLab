@@ -91,9 +91,9 @@
             <h2 class="section-title">ჩვენი პროექტები</h2>
             <div class="featured-project">
                 <div class="project-text">
-                    <h3>პროექტის სახელი</h3>
-                    <p>პროექტის მოკლე აღწერა, რომელიც ასახავს მის მიზანსა და გავლენას.</p>
-                    <a href="{% url 'projectinfo' Id=1 %}"><button class="btn">გაიგე მეტი</button></a>
+                    <h3>{{ projects.first.title }}</h3>
+                    <p>{{ projects.first.short_description_geo }}</p>
+                    <a href="{% url 'projectinfo' Id=projects.first.pk %}"><button class="btn">გაიგე მეტი</button></a>
                 </div>
                 <div class="project-image">
                     <img src="{% static 'pics/Untitled2.jpg' %}" alt="Project Image">

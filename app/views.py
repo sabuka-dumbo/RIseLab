@@ -29,7 +29,10 @@ def projectinfo(request, Id):
     return render(request, "projectinfo.html")
 
 def projects(request):
-    return render(request, "projects.html")
+    projects = Project.objects.all()
+    return render(request, "projects.html", {
+        "projects": projects,
+    })
 
 def donation(request):
     return render(request, "donation.html")

@@ -40,14 +40,19 @@
     <main class="projects-container">
         {% for project in projects %}
         <div class="project-card">
-            <img src="{{ project.image.url }}" alt="">
+            {% if project.image.url %}
+                <img src="{{ project.image.url }}" alt="{{ project.title }}">
+            {% else %}
+                <img src="{% static 'pics/placeholder.png' %}" alt="No image">
+            {% endif %}
             <div class="project-content">
                 <h3>{{ project.title }}</h3>
                 <p>{{ project.short_description_geo }}</p>
-                <a href="{% url 'projectinfo' Id=project.pk %}" class="btn">View More</a>
+                <a href="{% url 'projectinfo' id=project.pk %}" class="btn">View More</a>
             </div>
         </div>
         {% endfor %}
+
     </main>
 
     <script src="{% static 'index.js' %}"></script>

@@ -36,19 +36,22 @@
         <p>გაიგეთ მეტი ჩვენი პროექტების შესახებ და როგორ ვქმნით ინოვაციურ გადაწყვეტილებებს.</p>
     </section>
 
-    <!-- Projects Grid -->
     <main class="projects-container">
-        {% for project in projects %}
-        <div class="project-card">
-            <div class="project-content">
-                <h3>{{ project.title }}</h3>
-                <p>{{ project.short_description_geo }}</p>
-                <a href="{% url 'projectinfo' id=project.pk %}" class="btn">View More</a>
+        {% if projects %}
+            {% for project in projects %}
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>{{ project.title }}</h3>
+                    <p>{{ project.short_description_geo }}</p>
+                    <a href="{% url 'projectinfo' id=project.pk %}" class="btn">View More</a>
+                </div>
             </div>
-        </div>
-        {% endfor %}
-
+            {% endfor %}
+        {% else %}
+            <p>ჯერ არ გვაქვს პროექტები :(</p>
+        {% endif %}
     </main>
+
 
     <script src="{% static 'index.js' %}"></script>
 </body>

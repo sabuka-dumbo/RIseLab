@@ -4,8 +4,10 @@ from .models import *
 # Create your views here.
 def index(request):
     projects = Project.objects.all()
+    future_projects = Future_projects.objects.all()
     return render(request, "index.html", {
         "projects": projects,
+        "future_projects": future_projects,
     })
 
 def aboutus(request):

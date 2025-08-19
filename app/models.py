@@ -31,6 +31,7 @@ class Future_projects(models.Model):
     description_eng = models.TextField()
     short_description_eng = models.TextField()
     uploaded_at = models.DateField()
+    image = models.ImageField(upload_to='projects_images/', blank=True, null=True)
 
     def __str__(self):
         return f"{self.title}"

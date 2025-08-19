@@ -11,3 +11,14 @@ class Blog(models.Model):
 
     def __str__(self):
         return f"{ self.title }"
+    
+class Project(models.Model):
+    title = models.CharField(max_length=150)
+    description_geo = models.TextField()
+    short_description_geo = models.TextField()
+    description_eng = models.TextField()
+    short_description_eng = models.TextField()
+    uploaded_at = models.DateField()
+
+    def __str__(self):
+        return f"{self.title}"

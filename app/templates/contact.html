@@ -4,11 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title & Description -->
     <title>კონტაქტი - RiseLab</title>
+    <meta name="description" content="დაგვიკავშირდით RiseLab-ს, არასამთავრობო ორგანიზაციას, რომელიც მუშაობს ახალგაზრდების განვითარებაზე, განათლებაზე და სოციალური პროექტების ხელშეწყობაზე საქართველოში.">
+    <meta name="keywords" content="RiseLab, კონტაქტი, ახალგაზრდების განვითარება, არასამთავრობო ორგანიზაცია, სოციალური პროექტები, საქართველო, ტრენინგები, საქველმოქმედო აქტივობები">
+
+    <!-- Author & Language -->
+    <meta name="author" content="RiseLab">
+    <meta name="language" content="ka-GE">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.riselab.ge/contact/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="კონტაქტი - RiseLab">
+    <meta property="og:description" content="დაგვიკავშირდით RiseLab-ს, არასამთავრობო ორგანიზაციას, რომელიც მუშაობს ახალგაზრდების განვითარებაზე, განათლებაზე და სოციალური პროექტების ხელშეწყობაზე საქართველოში.">
+    <meta property="og:image" content="{% static 'pics/Untitled3.png' %}">
+    <meta property="og:url" content="https://www.riselab.ge/contact/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ka_GE">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="კონტაქტი - RiseLab">
+    <meta name="twitter:description" content="დაგვიკავშირდით RiseLab-ს, არასამთავრობო ორგანიზაციას, რომელიც მუშაობს ახალგაზრდების განვითარებაზე, განათლებაზე და სოციალური პროექტების ხელშეწყობაზე საქართველოში.">
+    <meta name="twitter:image" content="{% static 'pics/Untitled3.png' %}">
+
+    <!-- Favicons & Styles -->
+    <link rel="icon" type="image/png" href="{% static 'pics/Untitled3.png' %}">
     <link rel="stylesheet" href="{% static 'contact.css' %}">
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="{% static 'pics/Untitled3.png' %}">
+
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "name": "კონტაქტი - RiseLab",
+      "url": "https://www.riselab.ge/contact/",
+      "description": "დაგვიკავშირდით RiseLab-ს, არასამთავრობო ორგანიზაციას, რომელიც მუშაობს ახალგაზრდების განვითარებაზე, განათლებაზე და სოციალური პროექტების ხელშეწყობაზე საქართველოში.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "RiseLab",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "{% static 'pics/Untitled3.png' %}"
+        }
+      }
+    }
+    </script>
 </head>
+
 <body>
     <!-- Navbar -->
     <nav class="navbar">

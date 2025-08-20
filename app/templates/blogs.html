@@ -4,11 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RiseLab Blog</title>
+
+    <!-- Title & Description -->
+    <title>RiseLab ბლოგი - ახალგაზრდების განვითარების პროექტები საქართველოში</title>
+    <meta name="description" content="გაიგეთ RiseLab-ის უახლესი ბლოგ სტატიები. ჩვენ ვქმნით საგანმანათლებლო, საქველმოქმედო და განვითარების პროექტებს ახალგაზრდებისთვის საქართველოში.">
+    <meta name="keywords" content="RiseLab, ბლოგი, ახალგაზრდების განვითარება, ტრენინგები, პროექტები, საქველმოქმედო აქტივობები, საქართველო, informal education, youth empowerment, Georgian youth, NGO">
+
+    <!-- Author & Language -->
+    <meta name="author" content="RiseLab">
+    <meta name="language" content="ka-GE">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.riselab.ge/blogs/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="RiseLab ბლოგი - ახალგაზრდების განვითარების პროექტები საქართველოში">
+    <meta property="og:description" content="გაიგეთ RiseLab-ის უახლესი ბლოგ სტატიები, რომლებიც ეხება ახალგაზრდების განათლებას, უნარების განვითარებას და საქველმოქმედო აქტივობებს საქართველოში.">
+    <meta property="og:image" content="{% static 'pics/Untitled3.png' %}">
+    <meta property="og:url" content="https://www.riselab.ge/blogs/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ka_GE">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="RiseLab ბლოგი - ახალგაზრდების განვითარების პროექტები საქართველოში">
+    <meta name="twitter:description" content="გაიგეთ RiseLab-ის უახლესი ბლოგ სტატიები, რომლებიც ეხება ახალგაზრდების განათლებას, უნარების განვითარებას და საქველმოქმედო აქტივობებს საქართველოში.">
+    <meta name="twitter:image" content="{% static 'pics/Untitled3.png' %}">
+
+    <!-- Favicons & Styles -->
+    <link rel="icon" type="image/png" href="{% static 'pics/Untitled3.png' %}">
     <link rel="stylesheet" href="{% static 'blogs.css' %}">
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="{% static 'pics/Untitled3.png' %}">
+
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "RiseLab ბლოგი",
+      "url": "https://www.riselab.ge/blogs/",
+      "description": "გაიგეთ RiseLab-ის უახლესი ბლოგ სტატიები, რომლებიც ეხება ახალგაზრდების განათლებას, უნარების განვითარებას და საქველმოქმედო აქტივობებს საქართველოში.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "RiseLab",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "{% static 'pics/Untitled3.png' %}"
+        }
+      }
+    }
+    </script>
 </head>
+
 <body>
     <nav class="navbar">
         <div class="nav-left">

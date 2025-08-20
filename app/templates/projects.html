@@ -4,11 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title & Description -->
     <title>პროექტები - RiseLab</title>
+    <meta name="description" content="გაიგეთ მეტი RiseLab-ის ინოვაციური პროექტების შესახებ. ჩვენი პროექტები ხელს უწყობენ ახალგაზრდების განვითარებას, განათლებას, სოციალურ აქტივობებს და ინოვაციურ იდეებს საქართველოში.">
+    <meta name="keywords" content="RiseLab, პროექტები, ინოვაციური პროექტები, ახალგაზრდების განვითარება, სოციალური პროექტები, განათლება, საქართველო, არასამთავრობო ორგანიზაცია">
+
+    <!-- Author & Language -->
+    <meta name="author" content="RiseLab">
+    <meta name="language" content="ka-GE">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.riselab.ge/projects/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="პროექტები - RiseLab">
+    <meta property="og:description" content="გაიგეთ მეტი RiseLab-ის ინოვაციური პროექტების შესახებ. ჩვენი პროექტები ხელს უწყობენ ახალგაზრდების განვითარებას, განათლებას, სოციალურ აქტივობებს და ინოვაციურ იდეებს საქართველოში.">
+    <meta property="og:image" content="{% static 'pics/Untitled3.png' %}">
+    <meta property="og:url" content="https://www.riselab.ge/projects/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ka_GE">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="პროექტები - RiseLab">
+    <meta name="twitter:description" content="გაიგეთ მეტი RiseLab-ის ინოვაციური პროექტების შესახებ. ჩვენი პროექტები ხელს უწყობენ ახალგაზრდების განვითარებას, განათლებას, სოციალურ აქტივობებს და ინოვაციურ იდეებს საქართველოში.">
+    <meta name="twitter:image" content="{% static 'pics/Untitled3.png' %}">
+
+    <!-- Favicon & Styles -->
+    <link rel="icon" type="image/png" href="{% static 'pics/Untitled3.png' %}">
     <link rel="stylesheet" href="{% static 'projects.css' %}">
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="{% static 'pics/Untitled3.png' %}">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "RiseLab",
+      "url": "https://www.riselab.ge/projects/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{% static 'pics/Untitled3.png' %}"
+      },
+      "sameAs": [
+        "https://www.facebook.com/riselab",
+        "https://www.instagram.com/rise.lab.official"
+      ],
+      "description": "გაიგეთ მეტი RiseLab-ის ინოვაციური პროექტების შესახებ. ჩვენი პროექტები ხელს უწყობენ ახალგაზრდების განვითარებას, განათლებას, სოციალურ აქტივობებს და ინოვაციურ იდეებს საქართველოში."
+    }
+    </script>
 </head>
+
 <body>
     <!-- Navbar -->
     <nav class="navbar">

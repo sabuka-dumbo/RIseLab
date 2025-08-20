@@ -4,10 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title & Description -->
     <title>დონაცია - RiseLab</title>
+    <meta name="description" content="გაიღეთ დონაცია RiseLab-ს, არასამთავრობო ორგანიზაციას, რომელიც აძლიერებს ახალგაზრდებს, ხელს უწყობს განათლებას, სოციალური პროექტებისა და ინოვაციური აქტივობების განხორციელებას საქართველოში.">
+    <meta name="keywords" content="RiseLab, დონაცია, მხარდაჭერა, არასამთავრობო ორგანიზაცია, ახალგაზრდების განვითარება, საქართველო, სოციალური პროექტები, ინოვაციური პროექტები, ტრენინგები, საქველმოქმედო აქტივობები">
+
+    <!-- Author & Language -->
+    <meta name="author" content="RiseLab">
+    <meta name="language" content="ka-GE">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.riselab.ge/donation/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="დონაცია - RiseLab">
+    <meta property="og:description" content="გაიღეთ დონაცია RiseLab-ს, არასამთავრობო ორგანიზაციას, რომელიც აძლიერებს ახალგაზრდებს, ხელს უწყობს განათლებას, სოციალური პროექტებისა და ინოვაციური აქტივობების განხორციელებას საქართველოში.">
+    <meta property="og:image" content="{% static 'pics/Untitled3.png' %}">
+    <meta property="og:url" content="https://www.riselab.ge/donation/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ka_GE">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="დონაცია - RiseLab">
+    <meta name="twitter:description" content="გაიღეთ დონაცია RiseLab-ს, არასამთავრობო ორგანიზაციას, რომელიც აძლიერებს ახალგაზრდებს, ხელს უწყობს განათლებას, სოციალური პროექტებისა და ინოვაციური აქტივობების განხორციელებას საქართველოში.">
+    <meta name="twitter:image" content="{% static 'pics/Untitled3.png' %}">
+
+    <!-- Favicons & Styles -->
+    <link rel="icon" type="image/png" href="{% static 'pics/Untitled3.png' %}">
     <link rel="stylesheet" href="{% static 'donation.css' %}">
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "DonateAction",
+      "name": "დონაცია - RiseLab",
+      "url": "https://www.riselab.ge/donation/",
+      "description": "გაიღეთ დონაცია RiseLab-ს, არასამთავრობო ორგანიზაციას, რომელიც აძლიერებს ახალგაზრდებს, ხელს უწყობს განათლებას, სოციალური პროექტებისა და ინოვაციური აქტივობების განხორციელებას საქართველოში.",
+      "recipient": {
+        "@type": "Organization",
+        "name": "RiseLab",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "{% static 'pics/Untitled3.png' %}"
+        }
+      }
+    }
+    </script>
 </head>
+
 <body>
         <nav class="navbar">
             <div class="nav-left">

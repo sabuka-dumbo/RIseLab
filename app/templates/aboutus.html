@@ -4,11 +4,50 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>RiseLab</title>
+
+        <!-- Primary Title & Meta Description -->
+        <title>RiseLab | ჩვენს შესახებ - არასამთავრობო ორგანიზაცია ახალგაზრდებისთვის საქართველოში</title>
+        <meta name="description" content="გაიცანით RiseLab, არასამთავრობო ორგანიზაცია, რომელიც ეხმარება საქართველოს ახალგაზრდებს უნარების განვითარებაში, განათლებასა და აქტიურობში. ჩვენი მისიაა შექმნათ უკეთესი მომავალი ახალგაზრდებისთვის.">
+        <meta name="keywords" content="RiseLab, არასამთავრობო ორგანიზაცია, ნონ-პროფიტი, ახალგაზრდების განვითარება, ტრენინგები, სემინარები, საქველმოქმედო აქტივობები, საქართველოში ახალგაზრდებისთვის, youth empowerment Georgia, educational programs, volunteer projects, NGO Georgia, informal education, Georgian youth">
+
+        <!-- Author & Language -->
+        <meta name="author" content="RiseLab">
+        <meta name="language" content="ka-GE">
+
+        <!-- Canonical URL -->
+        <link rel="canonical" href="https://www.riselab.ge/aboutus/">
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:title" content="RiseLab | ჩვენს შესახებ - არასამთავრობო ორგანიზაცია ახალგაზრდებისთვის საქართველოში">
+        <meta property="og:description" content="გაიცანით RiseLab-ის გუნდი, მისია და გავლენა. ჩვენ ვეხმარებით ახალგაზრდებს უნარების განვითარებაში, განათლებასა და აქტიურობაში საქართველოში.">
+        <meta property="og:image" content="{% static 'pics/Untitled3.png' %}">
+        <meta property="og:url" content="https://www.riselab.ge/aboutus/">
+        <meta property="og:type" content="website">
+        <meta property="og:locale" content="ka_GE">
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="RiseLab | ჩვენს შესახებ - არასამთავრობო ორგანიზაცია ახალგაზრდებისთვის საქართველოში">
+        <meta name="twitter:description" content="გაიცანით RiseLab-ის მისია, გუნდი და გავლენა. ჩვენ ხელს უწყობთ ახალგაზრდების უნარების განვითარებას, განათლებასა და აქტიურობას.">
+        <meta name="twitter:image" content="{% static 'pics/Untitled3.png' %}">
+
+        <!-- Favicons & Styles -->
+        <link rel="icon" type="image/png" href="{% static 'pics/Untitled3.png' %}">
         <link rel="stylesheet" href="{% static 'aboutus.css' %}">
         <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-        <link rel="icon" type="image/png" href="{% static 'pics/Untitled3.png' %}">
+
+        <!-- Structured Data for SEO -->
+        <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "RiseLab",
+        "url": "https://www.riselab.ge/aboutus/",
+        "logo": "{% static 'pics/Untitled3.png' %}",
+        "description": "RiseLab არის არასამთავრობო ორგანიზაცია, რომელიც მიზნად ისახავს საქართველოს ახალგაზრდების განათლებასა და უნარების განვითარებას, პროექტებსა და ტრენინგებში მონაწილეობის უზრუნველყოფას."
+        }
+        </script>
     </head>
     <body>
         <nav class="navbar">

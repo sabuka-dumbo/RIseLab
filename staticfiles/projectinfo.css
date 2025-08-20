@@ -15,10 +15,10 @@ body { font-family: "Segoe UI", sans-serif; background: #f8fafc; padding-top: 70
 .nav-links { display: flex; gap: 2rem; }
 .nav-links a { text-decoration: none; color: #333; font-weight: 500; position: relative; padding: 4px 0; }
 .nav-links a::after {
-    content: ""; position: absolute; left: 0; bottom: 0; width: 0%; height: 2px; background: #0ea5e9;
+    content: ""; position: absolute; left: 0; bottom: 0; width: 0%; height: 2px; background: #0e5c5e;
     transition: width 0.3s ease;
 }
-.nav-links a:hover { color: #0ea5e9; }
+.nav-links a:hover { color: #0e5c5e; }
 .nav-links a:hover::after { width: 100%; }
 .burger { display: none; flex-direction: column; gap: 6px; cursor: pointer; }
 .burger span { width: 26px; height: 3px; background: #333; border-radius: 2px; transition: all 0.3s ease; }
@@ -36,7 +36,7 @@ body { font-family: "Segoe UI", sans-serif; background: #f8fafc; padding-top: 70
 }
 
 /* Hero Section */
-.hero-section { display: flex; align-items: center; justify-content: space-between; padding: 4rem 2rem; gap: 2rem; background: #0ea5e9; color: white; flex-wrap: wrap; }
+.hero-section { display: flex; align-items: center; justify-content: space-between; padding: 4rem 2rem; gap: 2rem; background: #0e5c5e; color: white; flex-wrap: wrap; }
 .hero-section .hero-text { flex: 1; min-width: 300px; }
 .hero-section .hero-text h2 { font-size: 2.5rem; margin-bottom: 1rem; }
 .hero-section .hero-text p { font-size: 1.2rem; }

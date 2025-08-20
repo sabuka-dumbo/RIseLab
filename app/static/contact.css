@@ -15,10 +15,10 @@ body { font-family: "Segoe UI", sans-serif; background: #f8fafc; padding-top: 70
 .nav-links { display: flex; gap: 2rem; }
 .nav-links a { text-decoration: none; color: #333; font-weight: 500; position: relative; padding: 4px 0; }
 .nav-links a::after {
-    content: ""; position: absolute; left: 0; bottom: 0; width: 0%; height: 2px; background: #0ea5e9;
+    content: ""; position: absolute; left: 0; bottom: 0; width: 0%; height: 2px; background: #0e5c5e;
     transition: width 0.3s ease;
 }
-.nav-links a:hover { color: #0ea5e9; }
+.nav-links a:hover { color: #0e5c5e; }
 .nav-links a:hover::after { width: 100%; }
 .burger { display: none; flex-direction: column; gap: 6px; cursor: pointer; }
 .burger span { width: 26px; height: 3px; background: #333; border-radius: 2px; transition: all 0.3s ease; }
@@ -37,7 +37,7 @@ body { font-family: "Segoe UI", sans-serif; background: #f8fafc; padding-top: 70
 
 /* Hero Section */
 .contact-hero {
-    text-align: center; padding: 4rem 2rem; background: #0ea5e9; color: white;
+    text-align: center; padding: 4rem 2rem; background: #0e5c5e; color: white;
 }
 .contact-hero h2 { font-size: 2.5rem; margin-bottom: 1rem; }
 .contact-hero p { font-size: 1.2rem; }
@@ -53,7 +53,7 @@ body { font-family: "Segoe UI", sans-serif; background: #f8fafc; padding-top: 70
 .contact-form input, .contact-form textarea {
     width: 100%; padding: 12px; margin-bottom: 1rem; border-radius: 8px; border: 1px solid #ccc; font-size: 1rem;
 }
-.contact-form button { background: #0ea5e9; color: white; padding: 12px 25px; border-radius: 8px; font-size: 1rem; border: none; cursor: pointer; transition: background 0.3s ease; }
+.contact-form button { background: #0e5c5e; color: white; padding: 12px 25px; border-radius: 8px; font-size: 1rem; border: none; cursor: pointer; transition: background 0.3s ease; }
 .contact-form button:hover { background: #0284c7; }
 
 /* Contact Info */

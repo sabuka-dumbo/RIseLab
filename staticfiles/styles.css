@@ -65,11 +65,11 @@ body {
     bottom: 0;
     width: 0%;
     height: 2px;
-    background: #0ea5e9;
+    background: #0e5c5e;
     transition: width 0.3s ease;
 }
 .nav-links a:hover {
-    color: #0ea5e9;
+    color: #0e5c5e;
 }
 .nav-links a:hover::after {
     width: 100%;
@@ -207,7 +207,6 @@ header {
     font-size: 20px;
     font-family: "Itim";
     font-weight: bold;
-    background-color: #0ea5e9;
     padding: 0;
     margin: 0;
     padding-left: 40px;
@@ -379,7 +378,6 @@ header {
     padding-right: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: #0ea5e9;
     border: none;
     outline: none;
     font-size: 20px;
@@ -466,7 +464,7 @@ header {
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 40px;
-  color: #0ea5e9;
+  color: #0e5c5e;
 }
 
 .cards {
@@ -517,7 +515,7 @@ header {
   font-weight: bold;
   text-align: center;
   margin-bottom: 30px;
-  color: #0ea5e9;
+  color: #0e5c5e;
 }
 
 .featured-project {
@@ -568,7 +566,7 @@ header {
 }
 
 .btn {
-  background: #0ea5e9;
+  background: #0e5c5e;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -584,8 +582,8 @@ header {
 
 .btn-outline {
   background: transparent;
-  border: 2px solid #0ea5e9;
-  color: #0ea5e9;
+  border: 2px solid #0e5c5e;
+  color: #0e5c5e;
   padding: 8px 18px;
   font-weight: bold;
   cursor: pointer;
@@ -594,7 +592,7 @@ header {
 }
 
 .btn-outline:hover {
-  background: #0ea5e9;
+  background: #0e5c5e;
   color: white;
 }
 
@@ -621,7 +619,7 @@ header {
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 30px;
-  color: #0ea5e9;
+  color: #0e5c5e;
 }
 
 .donation-content {
@@ -645,7 +643,7 @@ header {
 }
 
 .btn {
-  background: #0ea5e9;
+  background: #f06e30;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -691,7 +689,7 @@ header {
 }
 
 .footer {
-  background: #0ea5e9;
+  background: #0e5c5e;
   color: white;
   padding: 20px;
 }
@@ -800,4 +798,77 @@ header {
 
 .info p {
     margin: 3px 0;
+}
+
+button {
+  background-color: #0e5c5e;
+  color: white;
+}
+/* Navbar links hover */
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    position: relative;
+    padding: 4px 0;
+    transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background: #0e5c5e; /* change underline to match button color */
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #0e5c5e; /* text changes to orange on hover */
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* Global button styling */
+button,
+.btn,
+.s1-button,
+.header-button,
+.btn-outline {
+    background-color: #0e5c5e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease; /* smooth hover animations */
+}
+
+/* Hover effect */
+button:hover,
+.btn:hover,
+.s1-button:hover,
+.header-button:hover,
+.btn-outline:hover {
+    background-color: #d95b1f; /* slightly darker on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Optional: for outline buttons */
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid #0e5c5e;
+    color: #0e5c5e;
+}
+
+.btn-outline:hover {
+    background-color: #0e5c5e;
+    color: white;
 }

@@ -4,33 +4,51 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>RiseLab | არასამთავრობო ორგანიზაცია ახალგაზრდების განვითარებისათვის</title>
 
-        <!-- Primary SEO Meta Tags -->
-        <meta name="description" content="RiseLab არის არასამთავრობო ორგანიზაცია, რომელიც მიზნად ისახავს საქართველოს ახალგაზრდების ინფორმირებას, უნარების განვითარებასა და აქტიურობაში ჩართვას. გაიცანით ჩვენი პროექტები, გუნდი და ჩვენთან გაწევრიანდით.">
-        <meta name="keywords" content="RiseLab, არასამთავრობო ორგანიზაცია, ახალგაზრდების განვითარება, ტრენინგები, სემინარები, საქველმოქმედო კამპანიები, საქართველო, ნონ-პროფიტი, Youth Empowerment">
+        <!-- Primary Title & Meta Description -->
+        <title>RiseLab | არასამთავრობო ორგანიზაცია ახალგაზრდების განვითარებისთვის საქართველოში</title>
+        <meta name="description" content="RiseLab არის ნონ-პროფიტ ორგანიზაცია, რომელიც ხელს უწყობს საქართველოს ახალგაზრდების განათლებასა და უნარების განვითარებას. მონაწილეობა პროექტებში, ტრენინგებში და საქველმოქმედო აქტივობებში.">
+        <meta name="keywords" content="RiseLab, არასამთავრობო ორგანიზაცია, ნონ-პროფიტი, ახალგაზრდების განვითარება, ტრენინგები, სემინარები, საქველმოქმედო კამპანიები, საქართველოში ახალგაზრდებისთვის, youth empowerment Georgia, youth programs, volunteer projects, NGO Georgia, educational projects, informal education, Georgian youth">
+
+        <!-- Author & Language -->
         <meta name="author" content="RiseLab">
+        <meta name="language" content="ka-GE">
+
+        <!-- Canonical URL -->
+        <link rel="canonical" href="https://www.riselab.ge/">
 
         <!-- Open Graph / Facebook -->
-        <meta property="og:title" content="RiseLab | არასამთავრობო ორგანიზაცია ახალგაზრდების განვითარებისათვის">
-        <meta property="og:description" content="RiseLab - ორგანიზაცია, რომელიც ეხმარება საქართველოს ახალგაზრდებს განათლებასა და უნარების განვითარებაში. შეიტყვეთ მეტი ჩვენს პროექტებზე, გუნდზე და გაწევრიანდით.">
+        <meta property="og:title" content="RiseLab | არასამთავრობო ორგანიზაცია ახალგაზრდების განვითარებისთვის საქართველოში">
+        <meta property="og:description" content="RiseLab ეხმარება ახალგაზრდებს უნარების განვითარებაში, პროექტებში მონაწილეობის მიღებაში და სოციალური პასუხისმგებლობის გაძლიერებაში საქართველოში.">
         <meta property="og:image" content="{% static 'pics/Untitled3.png' %}">
         <meta property="og:url" content="https://www.riselab.ge/">
         <meta property="og:type" content="website">
+        <meta property="og:locale" content="ka_GE">
 
-        <!-- Twitter -->
+        <!-- Twitter Card -->
         <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="RiseLab | არასამთავრობო ორგანიზაცია ახალგაზრდების განვითარებისათვის">
-        <meta name="twitter:description" content="RiseLab ეხმარება ახალგაზრდებს უნარების განვითარებაში, პროექტებსა და ტრენინგებში მონაწილეობის მიღებაში.">
+        <meta name="twitter:title" content="RiseLab | არასამთავრობო ორგანიზაცია ახალგაზრდების განვითარებისთვის საქართველოში">
+        <meta name="twitter:description" content="RiseLab ხელს უწყობს ახალგაზრდების უნარების განვითარებას, განათლებასა და პროექტებში მონაწილეობის მიღებას.">
         <meta name="twitter:image" content="{% static 'pics/Untitled3.png' %}">
 
-        <!-- Favicon -->
+        <!-- Favicons & Styles -->
         <link rel="icon" type="image/png" href="{% static 'pics/Untitled3.png' %}">
-
-        <!-- Fonts & Styles -->
         <link rel="stylesheet" href="{% static 'styles.css' %}">
         <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+
+        <!-- Structured Data for SEO -->
+        <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "RiseLab",
+        "url": "https://www.riselab.ge/",
+        "logo": "{% static 'pics/Untitled3.png' %}",
+        "description": "RiseLab არის არასამთავრობო ორგანიზაცია, რომელიც მიზნად ისახავს საქართველოს ახალგაზრდების განათლებასა და უნარების განვითარებას, პროექტებსა და ტრენინგებში მონაწილეობას."
+        }
+        </script>
     </head>
+
     <body>
         <nav class="navbar">
             <div class="nav-left">

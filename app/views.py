@@ -26,7 +26,11 @@ def contact(request):
     return render(request, "contact.html")
 
 def projectinfo(request, Id):
-    return render(request, "projectinfo.html")
+    project = Project.objects.get(pk=Id)
+
+    return render(request, "projectinfo.html", {
+        "project": project
+    })
 
 def projects(request):
     projects = Project.objects.all()
